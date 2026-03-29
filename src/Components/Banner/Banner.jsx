@@ -5,7 +5,7 @@ import pointImg from '../../assets/products/Group 5.png';
 const Banner = () => {
     return (
         <div>
-            <div className='flex justify-between items-center flex-col-reverse md:flex-row py-24'>
+            <div className='flex justify-between items-center flex-col-reverse md:flex-row py-8 md:py-24'>
 
                 {/* hero container text */}
                 <div className='space-y-4'>
