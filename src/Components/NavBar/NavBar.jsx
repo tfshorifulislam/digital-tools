@@ -32,7 +32,7 @@ const NavBar = () => {
                     className={`    
                     ${hamburgerMenu ?
                             'flex flex-col space-y-5 py-10 px-5 rounded-xl absolute top-15 right-5 bg-gray-200 shadow-xl'
-                            : 'hidden md:flex md:flex-row md:bg-transparent md:p-0'}`}>
+                            : 'hidden md:flex md:flex-row md:bg-transparent md:p-0 gap-3'}`}>
 
                     <span
                         className={`text-[#101727] font-medium md:font-semibold ${hamburgerMenu ?
