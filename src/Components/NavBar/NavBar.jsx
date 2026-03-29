@@ -9,7 +9,7 @@ const NavBar = () => {
     const [hamburgerMenu, setHamburgerMenu] = useState(false)
     console.log(hamburgerMenu)
     return (
-        <div className='mt-8 flex justify-between items-center'>
+        <div className='mt-8 flex justify-between items-center w-11/12 mx-auto'>
 
             {/* Nav logo */}
             <div className='w-25 lg:w-45'>
