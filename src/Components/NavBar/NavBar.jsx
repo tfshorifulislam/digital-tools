@@ -28,21 +28,24 @@ const NavBar = () => {
 
                 <IoMdMenu className='flex md:hidden text-2xl cursor-pointer' onClick={() => setHamburgerMenu(!hamburgerMenu)} />
 
-                <div className={`    
+                <div
+                    className={`    
                     ${hamburgerMenu ?
-                        'flex flex-col space-y-5 py-10 px-5 rounded-xl absolute top-15 right-5 bg-gray-200 shadow-xl'
-                        : 'hidden md:flex md:flex-row md:bg-transparent md:p-0'}`}>
+                            'flex flex-col space-y-5 py-10 px-5 rounded-xl absolute top-15 right-5 bg-gray-200 shadow-xl'
+                            : 'hidden md:flex md:flex-row md:bg-transparent md:p-0'}`}>
+
                     <span
                         className={`text-[#101727] font-medium md:font-semibold ${hamburgerMenu ?
                             'flex'
-                            :'hidden md:flex btn btn-xs sm:btn-sm md:btn-md'}`}>Login
+                            : 'hidden md:flex btn btn-xs sm:btn-sm md:btn-md'}`}>Login
                     </span>
 
                     <span
                         className={`font-medium md:font-semibold ${hamburgerMenu ?
                             'flex text-[#101727]'
-                            :'hidden md:flex btn btn-xs sm:btn-sm md:btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full px-4 py-3 text-white'}`}>Get Started
+                            : 'hidden md:flex btn btn-xs sm:btn-sm md:btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full px-4 py-3 text-white'}`}>Get Started
                     </span>
+                    
                 </div>
 
             </div>
