@@ -8,7 +8,7 @@ const MainSubscriptionData = ({ subscriptionData, selectedCards, setSelectedCard
         <div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 w-11/12 mx-auto gap-5'>
                 {
-                    allCards.map(card => <OnlyCardMap card={card} selectedCards={selectedCards} setSelectedCards={setSelectedCards} />)
+                    allCards.map(card => <OnlyCardMap key={card.id} card={card} selectedCards={selectedCards} setSelectedCards={setSelectedCards} />)
                 }
             </div>
         </div>
