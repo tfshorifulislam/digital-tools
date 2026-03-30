@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "🎨"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder Pro",
+    "description": "Create ATS-friendly resumes with modern templates and easy export options.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": 3,
+    "name": "UI Kit Bundle",
+    "description": "Complete UI kit for web and mobile apps with reusable components.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["500+ components", "Figma + XD files", "Lifetime access"],
+    "icon": "🧩"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Pack",
+    "description": "Ready-to-use social media templates for Instagram, Facebook, and more.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["300+ posts", "Editable formats", "Weekly updates"],
+    "icon": "📱"
+  },
+  {
+    "id": 5,
+    "name": "Startup Pitch Deck Kit",
+    "description": "Professional pitch decks to impress investors and clients.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["50+ slides", "Editable charts", "PowerPoint + Google Slides"],
+    "icon": "📊"
+  },
+  {
+    "id": 6,
+    "name": "Icon Pack Ultimate",
+    "description": "Massive collection of icons for web, mobile, and design projects.",
+    "price": 19,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10,000+ icons", "SVG & PNG", "Regular updates"],
+    "icon": "⭐"
+  },
+  {
+    "id": 7,
+    "name": "E-commerce UI Kit",
+    "description": "Modern UI kit tailored for e-commerce platforms.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Product pages", "Checkout flows", "Responsive design"],
+    "icon": "🛒"
+  },
+  {
+    "id": 8,
+    "name": "Portfolio Templates",
+    "description": "Showcase your work with stylish and responsive portfolio templates.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["20+ layouts", "Dark/light mode", "Easy customization"],
+    "icon": "💼"
+  },
+  {
+    "id": 9,
+    "name": "Email Marketing Kit",
+    "description": "Beautiful email templates for campaigns and newsletters.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ templates", "Responsive design", "Mailchimp compatible"],
+    "icon": "✉️"
+  },
+  {
+    "id": 10,
+    "name": "Logo Maker Pack",
+    "description": "Create stunning logos with pre-made assets and fonts.",
+    "price": 35,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["500+ logos", "Editable vectors", "Commercial use"],
+    "icon": "🖌️"
+  }
+]
