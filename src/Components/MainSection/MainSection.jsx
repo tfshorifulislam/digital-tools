@@ -1,6 +1,8 @@
 import React from 'react';
 
-const MainSection = () => {
+const MainSection = ({ mainSectionBtnToggle, setMainSectionBtnToggle }) => {
+
+
     return (
         <div>
             <div>
@@ -10,15 +12,25 @@ const MainSection = () => {
                     <div className='flex justify-center mb-10'>
                         <div className='flex justify-center items-center w-fit bg-white border border-[#F6F6F6] p-2 rounded-full '>
                             <button
-                                className='btn rounded-2xl md:rounded-full py-3 px-6 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>
+                                onClick={() => setMainSectionBtnToggle('Products')}
+                                className={`btn rounded-2xl md:rounded-full py-3 px-6 
+                                ${mainSectionBtnToggle === 'Products'
+                                        ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white duration-1000'
+                                        : 'text-[#25065D]'
+                                    }`}>
                                 Products
                             </button>
 
                             <button
-                                className='btn rounded-2xl md:rounded-full py-3 px-6  text-[#25065D]'>
+                                onClick={() => setMainSectionBtnToggle('Cart')}
+                                className={`btn rounded-2xl md:rounded-full py-3 px-6 
+                                ${mainSectionBtnToggle === 'Cart'
+                                        ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white duration-1000'
+                                        : 'text-[#25065D]'
+                                    }`}>
                                 Cart (2)
                             </button>
-                            
+
                         </div>
                     </div>
                 </div>
