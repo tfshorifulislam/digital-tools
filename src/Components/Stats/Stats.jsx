@@ -3,7 +3,7 @@ import React from 'react';
 const Stats = () => {
     return (
         <div>
-            <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
+            <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-28'>
                 <div className='flex justify-between  gap-3 py-7 lg:py-14 px-5 lg:px-48 text-white text-center'>
                     <div className=''>
                         <h2 className='font-semibold md:font-extrabold text-3xl lg:text-4xl md:mb-5 mb-2'>50K+</h2>

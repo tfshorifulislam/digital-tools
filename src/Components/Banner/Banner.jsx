@@ -11,9 +11,9 @@ const Banner = () => {
                 <div className='space-y-4'>
 
                     <div className='flex justify-center md:justify-start mt-8 md:mt-0'>
-                        <div className='flex items-center justify-center gap-1 md:gap-3 py-2 px-4 bg-[#E1E7FF] rounded-full w-75'>
+                        <div className='flex items-center justify-center gap-1 md:gap-3 py-2 px-4 bg-[#E1E7FF] rounded-full w-fit'>
                             <img src={pointImg} alt="" className='animate-pulse' />
-                            <p className='font-medium text-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent '>New: AI-Powered Tools Available</p>
+                            <p className='font-medium text-center md:text-start bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent '>New: AI-Powered Tools Available</p>
 
                         </div>
                     </div>
