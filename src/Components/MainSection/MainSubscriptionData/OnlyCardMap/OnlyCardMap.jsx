@@ -4,8 +4,11 @@ import { FaCheck } from "react-icons/fa6";
 const OnlyCardMap = ({ card, selectedCards, setSelectedCards }) => {
     const [clickedBtn, setClickedBtn] = useState(false)
     const handleCardBuyBtn = () => {
-        setSelectedCards([...selectedCards, card])
-        setClickedBtn(true)
+        const exist = selectedCards.find(i => i.id === card.id)
+        if (!exist) {
+            setSelectedCards([...selectedCards, card])
+            setClickedBtn(true)
+        }
     }
     return (
         <div>
@@ -59,7 +62,11 @@ const OnlyCardMap = ({ card, selectedCards, setSelectedCards }) => {
                     </div>
                     <button
                         onClick={() => handleCardBuyBtn()}
-                        className={`btn py-4 w-full rounded-full  font-bold text-white ${clickedBtn ? 'bg-[#4f39f6]' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`}>{clickedBtn === true ? 'Added to Cart' : 'Buy Now'}
+                        className={`btn py-4 w-full rounded-full  font-bold text-white  ${clickedBtn ?
+                            'bg-[#4f39f6] duration-500'
+                                : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`}>
+
+                        {clickedBtn ? 'Added to Cart' : 'Buy Now'}
                     </button>
                 </div>
             </div>

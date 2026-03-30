@@ -32,7 +32,7 @@ function App() {
         mainSectionBtnToggle === 'Products' && <MainSection subscriptionData={subscriptionData} selectedCards ={selectedCards} setSelectedCards ={setSelectedCards}  />
       }
       {
-        mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} setMainSectionBtnToggle={setMainSectionBtnToggle} />
+        mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} setMainSectionBtnToggle={setMainSectionBtnToggle} setSelectedCards={setSelectedCards} />
       }
     </div>
   )
