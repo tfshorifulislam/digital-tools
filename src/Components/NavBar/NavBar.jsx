@@ -28,7 +28,7 @@ const NavBar = ({ selectedCards, setMainSectionBtnToggle }) => {
                     onClick={()=>{setMainSectionBtnToggle('Cart')}}
                     className='relative cursor-pointer'>
                     <CiShoppingCart className='text-4xl cursor-pointer ' />
-                    <span className='bg-red-700 p-1 w-8 flex justify-center items-center rounded-full text-white absolute -top-3 right-5 lg:-right-4 animate-pulse'>{selectedCards.length}</span>
+                    <span className='bg-red-700 p-1 w-5 h-5 flex justify-center items-center rounded-full text-white absolute -top-1 right-5 lg:-right-3'>{selectedCards.length}</span>
                 </div>
                 <IoMdMenu className='flex lg:hidden text-2xl cursor-pointer' onClick={() => setHamburgerMenu(!hamburgerMenu)} />
 
