@@ -19,20 +19,20 @@ const subscriptionData = promiseJsonData()
 function App() {
 
   const [mainSectionBtnToggle, setMainSectionBtnToggle] = useState('Products')
-  console.log(mainSectionBtnToggle)
+  // console.log(mainSectionBtnToggle)
   const [selectedCards, setSelectedCards]= useState([])
-  console.log(selectedCards)
+  // console.log(selectedCards)
   return (
     <div className='max-w-480 mx-auto'>
-      <NavBar />
+      <NavBar selectedCards={selectedCards} setMainSectionBtnToggle={setMainSectionBtnToggle} />
       <Banner />
       <Stats />
-      <MainSectionHeadingAndToggleBtn mainSectionBtnToggle={mainSectionBtnToggle} setMainSectionBtnToggle ={setMainSectionBtnToggle} />
+      <MainSectionHeadingAndToggleBtn mainSectionBtnToggle={mainSectionBtnToggle} setMainSectionBtnToggle ={setMainSectionBtnToggle} selectedCards={selectedCards}/>
       {
         mainSectionBtnToggle === 'Products' && <MainSection subscriptionData={subscriptionData} selectedCards ={selectedCards} setSelectedCards ={setSelectedCards}  />
       }
       {
-        mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} />
+        mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} setMainSectionBtnToggle={setMainSectionBtnToggle} />
       }
     </div>
   )

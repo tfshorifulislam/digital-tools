@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MainSectionHeadingAndToggleBtn = ({mainSectionBtnToggle, setMainSectionBtnToggle}) => {
+const MainSectionHeadingAndToggleBtn = ({ mainSectionBtnToggle, setMainSectionBtnToggle, selectedCards }) => {
     return (
         <div>
             {/* main section heading */}
@@ -28,7 +28,7 @@ const MainSectionHeadingAndToggleBtn = ({mainSectionBtnToggle, setMainSectionBtn
                                     ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white duration-1000'
                                     : 'text-[#25065D]'
                                 }`}>
-                            Cart (2)
+                            Cart ({selectedCards.length})
                         </button>
 
                     </div>

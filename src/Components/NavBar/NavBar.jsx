@@ -4,7 +4,7 @@ import NavItems from './NavItems/NavItems';
 import { CiShoppingCart } from 'react-icons/ci';
 import { IoMdMenu } from "react-icons/io";
 
-const NavBar = () => {
+const NavBar = ({ selectedCards, setMainSectionBtnToggle }) => {
     const navMenu = ['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ']
     const [hamburgerMenu, setHamburgerMenu] = useState(false)
     console.log(hamburgerMenu)
@@ -24,9 +24,13 @@ const NavBar = () => {
             {/* Navbar cart icon, login, started btn and responsive menu icon */}
             <div className='flex justify-between items-center gap-3 lg:gap-5 '>
 
-                <CiShoppingCart className='text-2xl cursor-pointer' />
-
-                <IoMdMenu className='flex md:hidden text-2xl cursor-pointer' onClick={() => setHamburgerMenu(!hamburgerMenu)} />
+                <div
+                    onClick={()=>{setMainSectionBtnToggle('Cart')}}
+                    className='relative cursor-pointer'>
+                    <CiShoppingCart className='text-4xl cursor-pointer ' />
+                    <span className='bg-red-700 p-1 w-8 flex justify-center items-center rounded-full text-white absolute -top-3 right-5 lg:-right-4 animate-pulse'>{selectedCards.length}</span>
+                </div>
+                <IoMdMenu className='flex lg:hidden text-2xl cursor-pointer' onClick={() => setHamburgerMenu(!hamburgerMenu)} />
 
                 <div
                     className={`    
@@ -37,15 +41,15 @@ const NavBar = () => {
                     <span
                         className={`text-[#101727] font-medium md:font-semibold ${hamburgerMenu ?
                             'flex'
-                            : 'hidden md:flex btn btn-xs sm:btn-sm md:btn-md'}`}>Login
+                            : 'hidden lg:flex btn btn-xs sm:btn-sm md:btn-md'}`}>Login
                     </span>
 
                     <span
                         className={`font-medium md:font-semibold ${hamburgerMenu ?
                             'flex text-[#101727]'
-                            : 'hidden md:flex btn btn-xs sm:btn-sm md:btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full px-4 py-3 text-white'}`}>Get Started
+                            : 'hidden lg:flex btn btn-xs sm:btn-sm md:btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full px-4 py-3 text-white'}`}>Get Started
                     </span>
-                    
+
                 </div>
 
             </div>
