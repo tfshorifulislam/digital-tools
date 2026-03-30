@@ -36,7 +36,9 @@ function App() {
         mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} setMainSectionBtnToggle={setMainSectionBtnToggle} setSelectedCards={setSelectedCards} />
       }
 
-      <StepsSection />
+      {
+        mainSectionBtnToggle !=='Cart' && <StepsSection />
+      }
     </div>
   )
 }
