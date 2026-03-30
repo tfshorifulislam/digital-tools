@@ -4,7 +4,7 @@ const Stats = () => {
     return (
         <div>
             <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-28'>
-                <div className='flex justify-between  gap-3 py-7 lg:py-14 w-10/12 lg:w-6xl mx-auto text-white text-center'>
+                <div className='flex justify-between  gap-3 py-7 lg:py-14 w-10/12 xl:w-6xl mx-auto text-white text-center'>
                     <div className=''>
                         <h2 className='font-semibold md:font-extrabold text-3xl md:text-5xl lg:text-6xl md:mb-5 mb-2'>50K+</h2>
                         <p className='text-lg md:text-xl lg:text-3'>Active Users</p>
