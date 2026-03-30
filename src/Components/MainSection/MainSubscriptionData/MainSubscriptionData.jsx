@@ -1,8 +1,12 @@
 import React, { use } from 'react';
 import { FaCheck } from "react-icons/fa6";
 
-const MainSubscriptionData = ({ subscriptionData }) => {
+const MainSubscriptionData = ({ subscriptionData, selectedCards, setSelectedCards}) => {
     const allCards = use(subscriptionData)
+
+    const handleCardBuyBtn = (card)=>{
+        setSelectedCards([...selectedCards,card])
+    }
     return (
         <div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 w-11/12 mx-auto gap-5'>
@@ -51,13 +55,16 @@ const MainSubscriptionData = ({ subscriptionData }) => {
                                     <ul >
                                         {
                                             card.features.map((feature, i) =>
-                                            <li key={i} className='flex items-center gap-3 text-[#627382] leading-5 my-4 font-me'>
-                                                <FaCheck className='text-[#30B868]' /> {feature}
-                                            </li>)
+                                                <li key={i} className='flex items-center gap-3 text-[#627382] leading-5 my-4 font-me'>
+                                                    <FaCheck className='text-[#30B868]' /> {feature}
+                                                </li>)
                                         }
                                     </ul>
                                 </div>
-                                <button className='btn py-4 w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-bold text-white'>Buy Now</button>
+                                <button
+                                    onClick={()=>handleCardBuyBtn(card)}
+                                    className='btn py-4 w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-bold text-white'>Buy Now
+                                </button>
                             </div>
                         </div>
 

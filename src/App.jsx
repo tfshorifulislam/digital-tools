@@ -5,6 +5,7 @@ import MainSection from './Components/MainSection/MainSection'
 import NavBar from './Components/NavBar/NavBar'
 import Stats from './Components/Stats/Stats'
 import MainSectionHeadingAndToggleBtn from './Components/MainSectionHeadingAndToggleBtn/MainSectionHeadingAndToggleBtn'
+import CartSection from './Components/CartSection/CartSection'
 
 
 const promiseJsonData = async () => {
@@ -18,8 +19,9 @@ const subscriptionData = promiseJsonData()
 function App() {
 
   const [mainSectionBtnToggle, setMainSectionBtnToggle] = useState('Products')
-  // console.log(mainSectionBtnToggle)
-  
+  console.log(mainSectionBtnToggle)
+  const [selectedCards, setSelectedCards]= useState([])
+  console.log(selectedCards)
   return (
     <div className='max-w-480 mx-auto'>
       <NavBar />
@@ -27,7 +29,10 @@ function App() {
       <Stats />
       <MainSectionHeadingAndToggleBtn mainSectionBtnToggle={mainSectionBtnToggle} setMainSectionBtnToggle ={setMainSectionBtnToggle} />
       {
-        mainSectionBtnToggle === 'Products' && <MainSection subscriptionData={subscriptionData} />
+        mainSectionBtnToggle === 'Products' && <MainSection subscriptionData={subscriptionData} selectedCards ={selectedCards} setSelectedCards ={setSelectedCards}  />
+      }
+      {
+        mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} />
       }
     </div>
   )
