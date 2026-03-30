@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar/NavBar'
 import Stats from './Components/Stats/Stats'
 import MainSectionHeadingAndToggleBtn from './Components/MainSectionHeadingAndToggleBtn/MainSectionHeadingAndToggleBtn'
 import CartSection from './Components/CartSection/CartSection'
+import StepsSection from './Components/StepsSection/StepsSection'
 
 
 const promiseJsonData = async () => {
@@ -34,6 +35,8 @@ function App() {
       {
         mainSectionBtnToggle === 'Cart' && <CartSection selectedCards={selectedCards} setMainSectionBtnToggle={setMainSectionBtnToggle} setSelectedCards={setSelectedCards} />
       }
+
+      <StepsSection />
     </div>
   )
 }
