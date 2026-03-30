@@ -21,7 +21,7 @@ const StepsSection = () => {
                         <div className='space-y-4'>
                             <div className='flex justify-center'>
                                 <div className='bg-linear-to-r from-[#4F39F620] to-[#9514FA20] rounded-full w-fit p-5 '>
-                                    <img src={icon1} alt="" />
+                                    <img className='w-7 h-7' src={icon1} alt="" />
                                 </div>
                             </div>
                             <h2 className='font-bold text-2xl text-center text-[#101727]'>Create Account</h2>
@@ -38,7 +38,7 @@ const StepsSection = () => {
                         <div className='space-y-4'>
                             <div className='flex justify-center'>
                                 <div className='bg-linear-to-r from-[#4F39F620] to-[#9514FA20] rounded-full w-fit p-5 '>
-                                    <img src={icon2} alt="" />
+                                    <img className='w-7 h-7' src={icon2} alt="" />
                                 </div>
                             </div>
                             <h2 className='font-bold text-2xl text-center text-[#101727]'>Choose Products</h2>
@@ -54,7 +54,7 @@ const StepsSection = () => {
                         <div className='space-y-4'>
                             <div className='flex justify-center'>
                                 <div className='bg-linear-to-r from-[#4F39F620] to-[#9514FA20] rounded-full w-fit p-5 '>
-                                    <img src={icon3} alt="" />
+                                    <img className='w-7 h-7' src={icon3} alt="" />
                                 </div>
                             </div>
                             <h2 className='font-bold text-2xl text-center text-[#101727]'>Start Creating</h2>
