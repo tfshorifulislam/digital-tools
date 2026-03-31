@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className='pt-20 md:pt-30 pb-8 bg-[#101727] text-white'>
 
-            <div className='w-10/12 mx-auto flex flex-col md:flex-row justify-start md:justify-between space-y-10'>
+            <div className='w-10/12 mx-auto flex flex-col lg:flex-row justify-start md:justify-between space-y-10'>
                 <div className='space-y-4 '>
                     <img src={footerLogo} alt="" />
                     <p className='text- white leading-6 opacity-80'>Premium digital tools for creators,<br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -48,8 +48,12 @@ const Footer = () => {
                         <FaSquareXTwitter className='p-3 bg-white rounded-full text-[#101727] text-5xl' />
                     </div>
                 </div>
-
             </div>
+                <div className='border-t opacity-50 border-white w-11/12 mx-auto mt-10 md:mt-20 mb-8'></div>
+                <div className='flex flex-col md:flex-row justify-center text-center md:text-start space-y-3 md:justify-between w-11/12 mx-auto'>
+                    <span className='leading-6 text-[#FAFAFA] opacity-50'>© 2026 Digitools. All rights reserved.</span>
+                    <span className='leading-6 text-[#FAFAFA] opacity-50'>Privacy Policy Terms of Service Cookies</span>
+                </div>
         </div>
     );
 };
