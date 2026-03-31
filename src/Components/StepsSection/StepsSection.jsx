@@ -8,8 +8,8 @@ import icon3 from '../../assets/products/rocket.png'
 const StepsSection = () => {
     return (
         <div>
-            <div className='mt-60 mb-30 w-11/12 mx-auto'>
-                <div>
+            <div className='mt-20 md:mt-60 mb-20 md:mb-30 w-11/12 mx-auto'>
+                <div >
                     <h1 className='text-3xl text-[#101727] text-center md:text-5xl font-medium md:font-extrabold'>Get Started in 3 Steps</h1>
                     <p className='text-center leading-5 text-[#627382] mt-4 mb-10'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
