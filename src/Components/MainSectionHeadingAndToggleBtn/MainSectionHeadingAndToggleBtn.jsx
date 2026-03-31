@@ -13,7 +13,7 @@ const MainSectionHeadingAndToggleBtn = ({ mainSectionBtnToggle, setMainSectionBt
                     <div className='flex justify-center items-center w-fit bg-white border border-[#F6F6F6] p-2 rounded-full '>
                         <button
                             onClick={() => setMainSectionBtnToggle('Products')}
-                            className={`btn rounded-2xl md:rounded-full py-3 px-6 
+                            className={`btn  rounded-l-full rounded-r-none py-3 px-6 
                                 ${mainSectionBtnToggle === 'Products'
                                     ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white duration-1000'
                                     : 'text-[#25065D]'
@@ -23,7 +23,7 @@ const MainSectionHeadingAndToggleBtn = ({ mainSectionBtnToggle, setMainSectionBt
 
                         <button
                             onClick={() => setMainSectionBtnToggle('Cart')}
-                            className={`btn rounded-2xl md:rounded-full py-3 px-6 
+                            className={`btn rounded-r-full rounded-l-none py-3 px-6 
                                 ${mainSectionBtnToggle === 'Cart'
                                     ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white duration-1000'
                                     : 'text-[#25065D]'
