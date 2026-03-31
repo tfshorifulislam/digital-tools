@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa6";
+import { toast } from 'react-toastify';
 
 const OnlyCardMap = ({ card, selectedCards, setSelectedCards }) => {
     const [clickedBtn, setClickedBtn] = useState(false)
     const handleCardBuyBtn = () => {
         const exist = selectedCards.find(i => i.id === card.id)
         if (!exist) {
-            setSelectedCards([...selectedCards, card])
-            setClickedBtn(true)
+            setSelectedCards([...selectedCards, card]);
+            setClickedBtn(true);
+            toast.success('Successfully added to cart')
         }
     }
     return (

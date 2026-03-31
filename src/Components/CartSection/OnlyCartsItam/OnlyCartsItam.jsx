@@ -1,8 +1,11 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const OnlyCartsItam = ({ cartsItem, selectedCards, setSelectedCards }) => {
-    const handleRemove = () => {
+   
+    const handleRemoveBtn = () => {
         setSelectedCards(selectedCards.filter(removeItem => removeItem.id !== cartsItem.id))
+        toast.warn('Successfully Remove cart')
     }
     return (
         <div>
@@ -18,7 +21,7 @@ const OnlyCartsItam = ({ cartsItem, selectedCards, setSelectedCards }) => {
                         </div>
 
                         <button
-                            onClick={() => handleRemove()}
+                            onClick={() => handleRemoveBtn()}
                             className='btn border-none bg-none text-[#FF3980] text-bold'>Remove
                         </button>
 

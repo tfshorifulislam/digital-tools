@@ -1,10 +1,15 @@
 import React from 'react';
 import { BsCartXFill } from "react-icons/bs";
 import OnlyCartsItam from './OnlyCartsItam/OnlyCartsItam';
+import { toast } from 'react-toastify';
 
 const CartSection = ({ selectedCards, setMainSectionBtnToggle, setSelectedCards }) => {
 
     const totalPrice = selectedCards.reduce((total, i) => (total + i.price), 0)
+    const handleProceedToCheckout = ()=>{
+        setSelectedCards([])
+        toast('Successfully Proceed to Checkout')
+    }
     return (
         <div className='w-11/12 mx-auto'>
             <span className='text-2xl text-[#101727] font-bold'>Your Cart</span>
@@ -32,7 +37,7 @@ const CartSection = ({ selectedCards, setMainSectionBtnToggle, setSelectedCards 
                     <h3 className='font-bold text-2xl text-[#101727]'>${totalPrice}</h3>
                 </div>
                 <button
-                    onClick={()=>setSelectedCards([])}
+                    onClick={()=>handleProceedToCheckout()}
                     className='w-full btn rounded-full my-6 text-white font-bold py-6 bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout
                 </button>
             </div>
