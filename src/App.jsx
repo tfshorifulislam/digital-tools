@@ -8,6 +8,8 @@ import MainSectionHeadingAndToggleBtn from './Components/MainSectionHeadingAndTo
 import CartSection from './Components/CartSection/CartSection'
 import StepsSection from './Components/StepsSection/StepsSection'
 import PricingSection from './Components/PricingSection/PricingSection'
+import TransformSection from './Components/TransformSection/TransformSection'
+import Footer from './Components/Footer/Footer'
 
 
 const promiseJsonData = async () => {
@@ -46,6 +48,12 @@ function App() {
       }
       {
           mainSectionBtnToggle !== 'Cart' && <PricingSection pricingData ={pricingData} />
+      }
+      {
+        mainSectionBtnToggle !== 'Cart' && <TransformSection />
+      }
+      {
+        mainSectionBtnToggle !== 'Cart' && <Footer />
       }
     </div>
   )
