@@ -3,12 +3,12 @@ import { FaCheck } from "react-icons/fa6";
 import { toast } from 'react-toastify';
 
 const OnlyCardMap = ({ card, selectedCards, setSelectedCards }) => {
-    const [clickedBtn, setClickedBtn] = useState(false)
+
+    const exist = selectedCards.find(i => i.id === card.id)
+
     const handleCardBuyBtn = () => {
-        const exist = selectedCards.find(i => i.id === card.id)
         if (!exist) {
             setSelectedCards([...selectedCards, card]);
-            setClickedBtn(true);
             toast.success('Successfully added to cart')
         }
     }
@@ -64,11 +64,12 @@ const OnlyCardMap = ({ card, selectedCards, setSelectedCards }) => {
                     </div>
                     <button
                         onClick={() => handleCardBuyBtn()}
-                        className={`btn py-4 w-full rounded-full  font-bold text-white  ${clickedBtn ?
-                            'bg-[#4f39f6] duration-500'
+                        className={`btn py-4 w-full rounded-full  font-bold text-white
+                            ${exist ?
+                                'bg-[#4f39f6] duration-500'
                                 : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`}>
 
-                        {clickedBtn ? 'Added to Cart' : 'Buy Now'}
+                        {exist ? 'Added to Cart' : 'Buy Now'}
                     </button>
                 </div>
             </div>
